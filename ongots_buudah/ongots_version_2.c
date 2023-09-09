@@ -57,8 +57,6 @@ void print_board_tracker(char board1_track_2[SIZE][SIZE], char board2_track_1[SI
     printf("\n\n");
 }
 
-
-
 void print_board(char board[SIZE][SIZE]){
     printf("   ");
     for (int i = 1; i < 10; i++){
