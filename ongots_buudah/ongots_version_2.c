@@ -318,8 +318,7 @@ int main(){
     battleships_drawer(board2);
 
 
-    //print_board(board1);
-    //print_board(board2);
+    print_board_tracker(board1, board2);
 
     while (true){
         

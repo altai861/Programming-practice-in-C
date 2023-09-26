@@ -14,15 +14,20 @@ void make_board(char board[8][8]){
 
 void print_board(char board[8][8]){
     for (int i = 0; i < 8; i++){
-        printf(" %i ", 8 - i);
+        printf(" \033[0m%i ", 8 - i);
         for (int j = 0; j < 8; j++){
-            printf(" %c ", board[i][j]);
+            if (board[i][j] == 'A' || board[i][j] == 'X') {
+                printf(" \033[0;32m%c ", board[i][j]);
+            } else {
+                printf(" \033[0m%c ", board[i][j]);
+            }
+            
         }
         printf("\n");
     }
     printf("   ");
     for (int i = 1; i < 9; i++){
-        printf(" %i ", i);
+        printf(" \033[0m%i ", i);
     }
 
     printf("\n");
