@@ -1,4 +1,4 @@
-
+#include <stdbool.h>
 
 void gurvaljin_swap(double* xp, double* yp); 
 void gurvaljin_sort(double massive[], int urt);
